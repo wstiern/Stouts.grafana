@@ -4,7 +4,7 @@ grafana_enabled: true                       # The role is enabled
 grafana_apt_repository: deb https://packagecloud.io/grafana/stable/debian/ jessie main
 grafana_apt_key: https://packagecloud.io/gpg.key
 
-grafana_version: 4.1.2-*                      # Set version (set to latest to install latest version)
+grafana_version: latest                      # Set version (set to latest to install latest version)
 
 grafana_app_mode: production
 
@@ -59,7 +59,7 @@ grafana_disable_gravatar: false                # disable gravatar profile images
 grafana_data_source_proxy_whitelist:        # data source proxy whitelist (ip_or_domain:port seperated by spaces)
 
 # Snapshots
-grafana_external_enabled: true
+grafana_external_enabled: false
 grafana_external_snapshot_url: https://snapshots-origin.raintank.io
 grafana_external_snapshot_name: Publish to snapshot.raintank.io
 
@@ -133,7 +133,7 @@ grafana_ampq_rabbitmq_url: amqp://localhost/
 grafana_ampq_exchange: grafana_events
 
 # Dashboard JSON files
-grafana_dashboard_json_enabled: false
+grafana_dashboard_json_enabled: true
 grafana_dashboard_json_path: /var/lib/grafana/dashboards
 
 # Setup nginx configuration
