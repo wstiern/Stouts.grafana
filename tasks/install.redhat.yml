@@ -3,6 +3,7 @@
 - name: grafana-install | Add Grafana Yum repository
   yum_repository:
     name: grafana
+    description: Grafana official repository
     baseurl: https://packagecloud.io/grafana/stable/el/$releasever/$basearch
     repo_gpgcheck: yes
     enabled: yes
