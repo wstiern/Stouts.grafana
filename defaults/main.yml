@@ -17,7 +17,7 @@ grafana_plugins_install: []
 # Server
 grafana_protocol: http
 grafana_http_addr: 0.0.0.0                  # The ip address to bind to
-grafana_http_port: 3000                     # The http port  to use
+grafana_http_port: 80                     # The http port  to use
 grafana_domain: localhost                   # The public facing domain name used to access grafana from a browser
 grafana_enforce_domain: false
 grafana_root_url: "%(protocol)s://%(domain)s:%(http_port)s/"

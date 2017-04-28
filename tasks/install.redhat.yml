@@ -25,3 +25,6 @@
   when: grafana_version == "latest"
   notify:
     - grafana restart
+
+- name: grafana-install | Enable Grafana to run on port 80
+  command: setcap 'cap_net_bind_service=+ep' /usr/sbin/grafana-server
